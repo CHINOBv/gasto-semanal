@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import './css/App.css';
+
+import Header from './components/Header.jsx'
+import Form from  './components/Form.jsx'
+import Listado from  './components/Listado.jsx'
+
+class App extends Component {
+  
+  state= {
+    presupuesto:"",
+    restante:"",
+    gastos: {}
+  }
+
+  Addgasto = gasto =>{
+    //copia del state
+    const gastos = {...this.state.gastos};
+
+    gastos[`gasto${Date.now()}`] = gasto;
+
+    this.setState({
+      gastos
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+      <Header
+      title="Head"/>
+      <div className="contenido-principal contenido">
+        <div className="row">
+          <div className="col md-mx-auto">
+            <Form
+            Addgasto={this.Addgasto}/>
+          </div>
+          <div className="col md-mx-auto">
+            <Listado
+            gastos={this.state.gastos}/>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
