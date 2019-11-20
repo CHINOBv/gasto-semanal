@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/CHINOBv/gasto-semanal/static/css/main.2710fafd.chunk.css",
+    "main.js": "/CHINOBv/gasto-semanal/static/js/main.46fc44c3.chunk.js",
+    "main.js.map": "/CHINOBv/gasto-semanal/static/js/main.46fc44c3.chunk.js.map",
+    "runtime-main.js": "/CHINOBv/gasto-semanal/static/js/runtime-main.475013c9.js",
+    "runtime-main.js.map": "/CHINOBv/gasto-semanal/static/js/runtime-main.475013c9.js.map",
+    "static/js/2.ee20a200.chunk.js": "/CHINOBv/gasto-semanal/static/js/2.ee20a200.chunk.js",
+    "static/js/2.ee20a200.chunk.js.map": "/CHINOBv/gasto-semanal/static/js/2.ee20a200.chunk.js.map",
+    "index.html": "/CHINOBv/gasto-semanal/index.html",
+    "precache-manifest.c85fab96a50440d714f4322c371eac46.js": "/CHINOBv/gasto-semanal/precache-manifest.c85fab96a50440d714f4322c371eac46.js",
+    "service-worker.js": "/CHINOBv/gasto-semanal/service-worker.js",
+    "static/css/main.2710fafd.chunk.css.map": "/CHINOBv/gasto-semanal/static/css/main.2710fafd.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.475013c9.js",
+    "static/js/2.ee20a200.chunk.js",
+    "static/css/main.2710fafd.chunk.css",
+    "static/js/main.46fc44c3.chunk.js"
+  ]
+}
