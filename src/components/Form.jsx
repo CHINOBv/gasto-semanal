@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 class Form extends Component {
   NGast = React.createRef();
@@ -51,6 +51,8 @@ class Form extends Component {
   }
 }
 
-//Form.propTypes = {};
+Form.propTypes = {
+  Addgasto: PropTypes.func.isRequired
+};
 
 export default Form;

@@ -6,7 +6,7 @@ import Header from "./components/Header.jsx";
 import Form from "./components/Form.jsx";
 import Listado from "./components/Listado.jsx";
 
-import { validarPresupuesto,revisarPresupuesto } from "./helper.js";
+import { validarPresupuesto } from "./helper.js";
 
 class App extends Component {
   state = {
@@ -55,6 +55,7 @@ class App extends Component {
     //restar
     restante -= restar;
     //establecer state
+
     this.setState({
       restante
     });

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 import Control from "./Control.jsx";
 
@@ -22,6 +22,8 @@ class Listado extends Component {
   }
 }
 
-//Listado.propTypes = {};
+Listado.propTypes = {
+  gastos: PropTypes.object.isRequired
+};
 
 export default Listado;

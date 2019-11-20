@@ -20,8 +20,7 @@ class Gasto extends Component {
 }
 
 Gasto.propTypes = {
-  Gast: PropTypes.string,
-  Coste: PropTypes.string
+  gasto: PropTypes.object.isRequired
 };
 Gasto.defaultpropTypes = {
   Gast: "Error",
