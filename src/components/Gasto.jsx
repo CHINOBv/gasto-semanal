@@ -1,32 +1,31 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Gasto extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  };
-    }
-    render() {
-        const {Coste,Gast} = this.props.gasto
-        return (
-            <li className="gastos">
-                <p>
-                    {Gast}
-                    <span className="gasto">${Coste}</span>
-                </p>
-            </li>
-        );
-    }
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    const { Coste, Gast } = this.props.gasto;
+    return (
+      <li className="gastos">
+        <p>
+          {Gast}
+          <span className="gasto">${Coste}</span>
+        </p>
+      </li>
+    );
+  }
 }
-
 
 Gasto.propTypes = {
-    NGast: PropTypes.string,
-    Cost: PropTypes.string
+  Gast: PropTypes.string,
+  Coste: PropTypes.string
 };
-Gasto.defaultpropTypes={
-    NGast: "Error",
-    Cost:"Error"
-}
+Gasto.defaultpropTypes = {
+  Gast: "Error",
+  Coste: "Error"
+};
 
 export default Gasto;

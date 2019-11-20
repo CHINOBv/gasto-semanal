@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 //import PropTypes from "prop-types";
 
+import Control from "./Control.jsx";
+
 import Gasto from "./Gasto.jsx";
 
 class Listado extends Component {
@@ -11,6 +13,10 @@ class Listado extends Component {
         {Object.keys(this.props.gastos).map(key => (
           <Gasto key={key} gasto={this.props.gastos[key]} />
         ))}
+        <Control
+          presupuesto={this.props.presupuesto}
+          restante={this.props.restante}
+        />
       </div>
     );
   }

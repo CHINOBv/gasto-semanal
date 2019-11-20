@@ -15,9 +15,7 @@ class Form extends Component {
 
     //console.log(gasto);
     //Enviando datos
-    this.props.Addgasto(gasto)
-
-    
+    this.props.Addgasto(gasto);
   };
 
   render() {
